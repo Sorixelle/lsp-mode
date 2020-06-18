@@ -381,8 +381,8 @@ unless overridden by a more specific face association."
   '(ccls lsp-clients lsp-clojure lsp-csharp lsp-css lsp-dart lsp-elm
          lsp-erlang lsp-eslint lsp-fsharp lsp-gdscript lsp-go lsp-haskell lsp-haxe
          lsp-intelephense lsp-java lsp-json lsp-metals lsp-perl lsp-pwsh lsp-pyls
-         lsp-python-ms lsp-rust lsp-serenata lsp-solargraph lsp-terraform lsp-verilog lsp-vetur
-         lsp-vhdl lsp-xml lsp-yaml lsp-sqls)
+         lsp-python-ms lsp-rust lsp-serenata lsp-solargraph lsp-svelte lsp-terraform
+         lsp-verilog lsp-vetur lsp-vhdl lsp-xml lsp-yaml lsp-sqls)
   "List of the clients to be automatically required."
   :group 'lsp-mode
   :type '(repeat symbol))
@@ -827,6 +827,7 @@ Changes take effect only when a new session is started."
                                         (".*\\.lua$" . "lua")
                                         (".*\\.sql$" . "sql")
                                         (".*\\.html$" . "html")
+                                        (".*\\.svelte$" . "svelte")
                                         (ada-mode . "ada")
                                         (sql-mode . "sql")
                                         (vimrc-mode . "vim")
